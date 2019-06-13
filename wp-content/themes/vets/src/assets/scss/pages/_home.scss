@@ -1,0 +1,24 @@
+.vets-home-hero {
+    height: 100vh;
+    background: url('../images/vets/hero-charlie.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-position: right;
+    h1 {
+        color: $vets-orange;
+        font-family: $vets-lato;
+        letter-spacing: $vets-header-spacing;
+        font-size: $vets-header-size;
+        max-width: 70%;
+    }
+    p {
+        max-width: 52%;
+    }
+    .vets-line {
+        max-width: 55%;
+        margin: 0;
+        border-bottom: 1px solid $white;
+    }
+}

@@ -1,0 +1,60 @@
+// Navigation breakpoints
+.mobile-menu,
+.site-title-bar {
+  @include hide-for(medium);
+}
+//
+.desktop-menu,
+.site-navigation .top-bar-left {
+  @include show-for(medium);
+}
+
+// Site title
+.site-desktop-title a {
+  font-weight: bold;
+}
+
+// WP post navigation
+.post-navigation {
+  @include clearfix;
+}
+
+.nav-previous {
+  float:left;
+}
+
+.nav-next {
+  float:right;
+}
+
+.top-bar, .top-bar ul {
+  background-color: $white;
+}
+.site-header {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: $white;
+}
+
+#menu-primary {
+  .menu-item {
+    a {
+      font-family: $vets-lato;
+      color: $vets-black;
+      // text-transform: uppercase;
+      font-size: 14px;  
+      padding: 16px 26px;
+    }
+    a:hover {
+      border-bottom: 1px solid $vets-black;
+      color: $vets-black;
+    }
+  }
+}
+
+.vets-logo {
+  max-width: 190px;
+}
+
