@@ -1,0 +1,25 @@
+.services-menu {
+    font-size: 14px;
+    font-family: $vets-lato;  
+        .services-list {
+            list-style : none;
+            padding-left: 0;
+            margin: 0;
+            margin: 0;
+            li {
+                padding-bottom: 5px;
+            }
+            a {
+                color: $vets-grey;
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: $vets-black;
+            }
+        } 
+    h3 {
+        font-size: 22px;
+        font-family: $vets-lato;
+        color: $vets-orange;
+    }
+}
