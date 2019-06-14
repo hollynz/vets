@@ -55,3 +55,6 @@
 	</div>
 
 	</header>
+
+	<!-- main body content after fixed nav -->
+	<div class="vets-main-content">

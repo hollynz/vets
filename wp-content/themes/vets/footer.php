@@ -9,6 +9,8 @@
  */
 ?>
 
+<!-- end main body content (after fixed nav) -->
+</div>
 <footer class="footer-container">
 	<div class="footer-grid">
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>

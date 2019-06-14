@@ -13,8 +13,7 @@
                 'menu_position' => 5,
                 'supports' => array(
                     'title',
-                    'editor',
-                    'thumbnail'
+                    'editor'
                 ),
                 // non-custom taxonomies
                 'taxonomies' => array('category')
@@ -33,7 +32,8 @@
                 'supports' => array(
                     'title',
                     'editor',
-                    'thumbnail'
+                    'thumbnail',
+                    'excerpt'
                 )
             )
         );

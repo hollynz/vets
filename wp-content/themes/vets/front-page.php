@@ -11,4 +11,38 @@
     </div>
 </div>
 
+<div class="grid-container vets-team">
+    <?php
+    /**
+    * Setup query to show the team post type with all posts.
+    * Output is title with image and exercpt.
+    */
+    $args = array(  
+        'post_type' => 'team-members',
+        'post_status' => 'publish',
+        // 'posts_per_page' => 2
+    );
+
+    $loop = new WP_Query( $args );
+        
+    while ( $loop->have_posts() ) : $loop->the_post();
+    ?>
+    <h1 class="vets-heading"> <?php the_title(); ?> </h1>
+    <h3 class="vets-subheading"> <?php the_excerpt(); ?></h3>
+    <div class="vets-team-content"> <?php the_content(); ?> </div>
+    <div>
+        <?php the_post_thumbnail($size = array(100,100), $attr = 'class=vets-team-img'); ?> 
+    </div>
+    <?php
+    endwhile;
+
+    wp_reset_postdata();
+    ?>
+</div>
+
+<?php 
+    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home-testimonials') ) : 
+    endif; 
+?>
+
 <?php get_footer(); ?>

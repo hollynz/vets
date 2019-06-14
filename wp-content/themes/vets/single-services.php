@@ -19,7 +19,7 @@
             endwhile;
             else: 
             ?>
-                <p>Sorry, no posts!</p>
+                <p>Sorry, no content!</p>
             <?php
             endif;
             

@@ -65,6 +65,21 @@ require_once( 'library/custom-meta-boxes.php' );
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
 
+function vets_widgets_init() {
+    register_sidebar(
+        array(
+            'name'          => __( 'Home Testimonials', 'vets' ),
+            'id'            => 'home-testimonials',
+            'description'   => __( 'Testimonials section on the home page.', 'vets' ),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            // 'before_title'  => '<h2 class="widget-title">',
+            // 'after_title'   => '</h2>',
+        )
+    );
+
+}
+add_action( 'widgets_init', 'vets_widgets_init' );
 
 if ( !function_exists('vets_setup')) :
     function vets_setup()
@@ -90,3 +105,4 @@ if ( !function_exists('vets_setup')) :
 
 endif;
 add_action('after_setup_theme', 'vets_setup');
+
