@@ -7,15 +7,21 @@
             find large queues in our waiting room because we don’t want to be too busy to take what we consider the appropriate care and 
             attention your pet (and you) need.
         </p>
-        <hr class="vets-hr">
+        <hr class="vets-hr">       
     </div>
+    <div class="vets-down-arrow-container">
+        <p class="vets-down-arrow">
+            <a href="#vetsHomeContent">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </p>
+    </div>
+
 </div>
 
-<div class="vets-home-content">
+<div id="vetsHomeContent" class="vets-home-content">
 
-<div class="vets-vl">
-
-</div>
+<div class="vets-vl"></div>
 
 <div class="grid-container vets-team">
     <?php
@@ -30,14 +36,23 @@
     );
 
     $loop = new WP_Query( $args );
+    $count = 0;
         
     while ( $loop->have_posts() ) : $loop->the_post();
     ?>
-    <h2 class="vets-heading-size-small"> <?php the_title(); ?> </h2>
-    <h4 class="vets-subheading"> <?php the_excerpt(); ?></h4>
-    <div class="vets-team-content"> <?php the_content(); ?> </div>
-    <div>
-        <?php the_post_thumbnail($size = array(100,100), $attr = 'class=vets-team-img'); ?> 
+    <div class="vets-team-member">
+        <div class="vets-team-heading">
+            <h2 class="vets-heading-size-small"> <?php the_title(); ?> </h2>
+            <h4 class="vets-subheading"> <?php the_excerpt(); ?></h4>
+        </div>
+        
+        
+        <div class="vets-team-content grid-x grid-margin-x">
+            <div class="vets-team-image cell medium-4">
+                <?php the_post_thumbnail(); ?> 
+            </div>
+            <div class="vets-team-description cell medium-8"> <?php the_content(); ?> </div>
+        </div>
     </div>
     <?php
     endwhile;

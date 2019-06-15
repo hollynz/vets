@@ -20,3 +20,15 @@ body {
     font-size: $vets-paragraph-size-large;
     max-width: 52%;
 }
+
+a {
+    color: $white;
+}
+
+a:hover {
+    color: $vets-yellow;
+}
+
+a:focus {
+    color: $white;
+}
