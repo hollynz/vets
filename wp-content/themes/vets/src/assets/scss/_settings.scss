@@ -880,6 +880,7 @@ $vets-yellow: #F2AC16;
 $vets-blue: #0E1A64;
 $vets-black: #222222;
 $vets-grey: #a9a9a9;
+$vets-light-grey: #d7d7d7;
 
 // 58. Vets Typography
 // -----------
@@ -888,5 +889,8 @@ $vets-khula: 'Khula', sans-serif;
 
 // 59. Vets Sizing/Spacing
 // -----------
-$vets-header-spacing: 0.02em;
-$vets-header-size: 3.5em;
+$vets-heading-spacing: 0.02em;
+$vets-heading-size-large: 3.5em;
+$vets-heading-size-small: 2.5em;
+$vets-subheading-size: 0.9em;
+$vets-paragraph-size-large: 1em;

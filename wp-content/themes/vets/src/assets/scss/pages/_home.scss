@@ -1,24 +1,35 @@
 .vets-home-hero {
-    height: 100vh;
-    background: url('../images/vets/hero-charlie.png');
+    height: 70vh;
+    background: url('../images/vets/hero-charlie.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-position: right;
-    h1 {
-        color: $vets-orange;
-        font-family: $vets-lato;
-        letter-spacing: $vets-header-spacing;
-        font-size: $vets-header-size;
+    .vets-heading-hero {
         max-width: 70%;
     }
-    p {
-        max-width: 52%;
-    }
-    .vets-line {
+    .vets-hr {
         max-width: 55%;
         margin: 0;
         border-bottom: 1px solid $white;
     }
 }
+
+.vets-home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    div.vets-vl {
+        border-left: 10px solid $vets-yellow;
+        height: 100%;
+        z-index: -1;
+        margin: 0 auto;
+        position: absolute;
+    }
+
+}
+

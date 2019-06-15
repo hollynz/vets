@@ -1,0 +1,22 @@
+body {
+    font-family: $vets-khula;
+}
+
+.vets-heading-size-large, .vets-heading-size-small {
+    color: $vets-orange;
+    font-family: $vets-lato;
+    letter-spacing: $vets-heading-spacing;
+}
+.vets-heading-size-large {
+    font-size: $vets-heading-size-large;
+}
+.vets-heading-size-small {
+    font-size: $vets-heading-size-small;
+}
+.vets-subheading {
+    font-size: $vets-subheading-size;
+}
+.vets-paragraph-size-large {
+    font-size: $vets-paragraph-size-large;
+    max-width: 52%;
+}

@@ -66,14 +66,15 @@ require_once( 'library/custom-meta-boxes.php' );
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
 
 function vets_widgets_init() {
+    // add testimonials section to home page
     register_sidebar(
         array(
             'name'          => __( 'Home Testimonials', 'vets' ),
             'id'            => 'home-testimonials',
             'description'   => __( 'Testimonials section on the home page.', 'vets' ),
-            'before_widget' => '<section id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</section>',
-            // 'before_title'  => '<h2 class="widget-title">',
+            'before_widget' => '<div id="%1$s" class="widget %2$s grid-container">',
+            'after_widget'  => '</div>',
+            // 'before_title'  => '<h2 class="vets-heading-size-small">',
             // 'after_title'   => '</h2>',
         )
     );

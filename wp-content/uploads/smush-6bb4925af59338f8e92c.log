@@ -1,0 +1,14 @@
+[2019-06-14 22:26:54 : INFO] - 
+ 
+[2019-06-14 22:26:54 : INFO] - Header for logs at time:  Fri, 14 Jun 2019 22:26:54 +0000 on http://localhost/vets 
+[2019-06-14 22:26:54 : INFO] - WP: 5.2.1 
+[2019-06-14 22:26:54 : INFO] - PHP: 7.1.10 (apache2handler, Darwin dov2-sc-18.local 17.7.0 Darwin Kernel Version 17.7.0: Wed Oct 10 23:06:14 PDT 2018; root:xnu-4570.71.13~1/RELEASE_X86_64 x86_64) 
+[2019-06-14 22:26:54 : INFO] - MySQL: 5.5.5 
+[2019-06-14 22:26:54 : INFO] - WPLANG: en_US 
+[2019-06-14 22:26:54 : INFO] - Server: Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3 
+[2019-06-14 22:26:54 : INFO] - Outbound connections: N 
+[2019-06-14 22:26:54 : INFO] - safe_mode: 0 
+[2019-06-14 22:26:54 : INFO] - max_execution_time: 30 
+[2019-06-14 22:26:54 : INFO] - memory_limit: 256M (used: 26.3M | 28M) 
+[2019-06-14 22:26:54 : INFO] - multisite: N 
+[2019-06-14 22:26:54 : INFO] - openssl: OpenSSL 1.0.2l  25 May 2017 
