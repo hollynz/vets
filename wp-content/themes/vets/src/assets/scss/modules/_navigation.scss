@@ -27,10 +27,6 @@
   float:right;
 }
 
-.top-bar {
-  padding-left: 0;
-}
-
 .top-bar, .top-bar ul {
   background-color: $white;
 }
@@ -47,9 +43,6 @@
   top: 0;
   background-color: $white;
   border-bottom: solid 1px $vets-light-grey;
-  .vets-nav {
-    padding-left: 0;
-  }
   .vets-nav-top {
     display: flex;
     justify-content: flex-end;

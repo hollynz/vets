@@ -24,50 +24,53 @@
 	<?php endif; ?>
 
 	<header class="site-header" role="banner">
-	<div class="grid-container vets-nav-top">
-		<div class="vets-nav-top-item">
-			<i class="fas fa-map-marker-alt"></i>
-			<div><p>154 Forbury Road, St. Clair, Dunedin</p></div>
-		</div>
-		<div class="vets-nav-top-item">
-			<i class="fas fa-phone"></i>
-			<div><p>03-455-1010</p></div>
-		</div>
-		<div class="vets-nav-top-item">
-			<a href="https://www.facebook.com/pages/category/Veterinarian/Vets-at-St-Clair-109278152427055/" target="_blank">
-				<i class="fab fa-facebook-square"></i>
-			</a>
-		</div>
-	</div>
-	<div class="grid-container vets-nav">
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
-			<div class="title-bar-left">
-				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
-				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="vets-logo" src="<?php bloginfo('template_directory');?>/src/assets/images/vets/logo-transparent.png" alt="Vets@St.Clair">
-					</a>
-				</span>
+		<div class="grid-container vets-nav-top">
+			<div class="vets-nav-top-item">
+				<i class="fas fa-map-marker-alt"></i>
+				<div><p>154 Forbury Road, St. Clair, Dunedin</p></div>
+			</div>
+			<div class="vets-nav-top-item">
+				<i class="fas fa-phone"></i>
+				<div><p>03-455-1010</p></div>
+			</div>
+			<div class="vets-nav-top-item">
+				<a href="https://www.facebook.com/pages/category/Veterinarian/Vets-at-St-Clair-109278152427055/" target="_blank">
+					<i class="fab fa-facebook-square"></i>
+				</a>
 			</div>
 		</div>
 
-		<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
-			<div class="top-bar-left">
-				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="vets-logo" src="<?php bloginfo('template_directory');?>/src/assets/images/vets/logo-transparent.png" alt="Vets@St.Clair">
-					</a>
+		<div class="grid-container vets-nav">
+			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+				<!-- Mobile left nav (logo) -->
+				<div class="title-bar-left">
+					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
+					<span class="site-mobile-title title-bar-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img class="vets-logo" src="<?php bloginfo('template_directory');?>/src/assets/images/vets/logo-transparent.png" alt="Vets@St.Clair">
+						</a>
+					</span>
 				</div>
 			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
 
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
-		</nav>
-	</div>
+			<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
+				<!-- Desktop left nav (logo) -->
+				<div class="top-bar-left">
+					<div class="site-desktop-title top-bar-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img class="vets-logo" src="<?php bloginfo('template_directory');?>/src/assets/images/vets/logo-transparent.png" alt="Vets@St.Clair">
+						</a>
+					</div>
+				</div>
+				<!-- Link to right nav template (mobile and desktop) -->
+				<div class="top-bar-right">
+					<?php foundationpress_top_bar_r(); ?>
+					<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+					<?php endif; ?>
+				</div>
+			</nav>
+		</div>
 
 	</header>
 

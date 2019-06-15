@@ -7,7 +7,7 @@
             find large queues in our waiting room because we don’t want to be too busy to take what we consider the appropriate care and 
             attention your pet (and you) need.
         </p>
-        <hr class="vets-hr">       
+        <hr class="vets-hr">     
     </div>
     <div class="vets-down-arrow-container">
         <p class="vets-down-arrow">
