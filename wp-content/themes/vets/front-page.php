@@ -8,6 +8,12 @@
             attention your pet (and you) need.
         </p>
         <hr class="vets-hr">     
+        <button class="vets-button">
+            <svg>
+                <rect x="0" y="0" fill="none" width="166" height="45" />
+            </svg>
+            Meet our Team!
+        </button>  
     </div>
     <div class="vets-down-arrow-container">
         <p class="vets-down-arrow">
