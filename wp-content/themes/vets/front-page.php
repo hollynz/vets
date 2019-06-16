@@ -1,13 +1,27 @@
 <?php get_header(); ?>
 <div class="grid-container fluid vets-home-hero">
-    <div class="grid-container">
+    <div class="grid-container vets-hero-content">
         <h1 class="vets-heading-size-large vets-heading-hero">We care about your pets.</h1>
         <p class="vets-paragraph-size-large">
             We really do. We aren’t here to “roll the numbers”, so you won’t 
             find large queues in our waiting room because we don’t want to be too busy to take what we consider the appropriate care and 
             attention your pet (and you) need.
         </p>
-        <hr class="vets-hr">     
+        <hr class="vets-hr">
+        <div class="vets-buttons">
+            <div class="vets-button inverted">
+                <svg>
+                    <rect />
+                </svg>
+                <span>Our Services</span>
+            </div>
+            <div class="vets-button">
+                <svg>
+                    <rect />
+                </svg>
+                <span>Meet our Team!</span>
+            </div> 
+        </div>
     </div>
     <div class="vets-down-arrow-container">
         <p class="vets-down-arrow">

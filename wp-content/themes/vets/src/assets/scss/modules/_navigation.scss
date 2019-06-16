@@ -68,8 +68,11 @@
         font-size: 1.1em;
       }
       .fa-facebook-square {
-        color: $vets-yellow;
+        color: $vets-orange;
         font-size: 1.9em;
+      }
+      .fa-facebook-square:hover {
+        color: $vets-blue;
       }
     };
   }
@@ -93,4 +96,3 @@
 .vets-logo {
   max-width: 220px;
 }
-

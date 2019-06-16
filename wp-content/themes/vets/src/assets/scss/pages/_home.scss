@@ -1,5 +1,5 @@
 .vets-home-hero {
-    height: 80vh;
+    height: 96vh;
     background: url('../images/vets/hero-charlie.jpg');
     background-size: cover;
     display: flex;
@@ -7,14 +7,34 @@
     justify-content: flex-start;
     background-position: right;
     position: relative;
-    .vets-heading-hero {
-        max-width: 70%;
+    .vets-hero-content {
+        padding-left: 27px;
+        .vets-heading-hero {
+            max-width: 70%;
+        }
+        .vets-hr {
+            max-width: 55%;
+            margin: 0;
+            border-bottom: 1px solid $white;
+        }
+        .vets-buttons {
+            display: flex;
+            justify-content: flex-end;
+            max-width: 55%;
+            margin-top: 3%;
+            .vets-button {
+                margin-left: 6%;
+            }
+            .vets-button.inverted {
+                background: none;
+                color: $vets-orange;
+            }
+            .vets-button.inverted svg rect {
+                stroke: $vets-orange;
+            }
+        }
     }
-    .vets-hr {
-        max-width: 55%;
-        margin: 0;
-        border-bottom: 1px solid $white;
-    }
+    
     .vets-down-arrow-container {
         position: absolute;
         bottom: 0;
@@ -22,8 +42,21 @@
         right: 0;
         width: 100%;
         .vets-down-arrow {
+            position: absolute;
+            z-index: 2;
+            height: 35px;
+            width: 80px;
+            margin: 0px 0 0 -40px;
+            line-height: 20px;
+            left: 50%;
+            bottom: 0;
             text-align: center;
-            margin-bottom: 1%;
+            font-size: 1.4em;
+            text-decoration: none;
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+        }
+        .vets-down-arrow:hover {
+        //    Bounce animation
         }
     }
     

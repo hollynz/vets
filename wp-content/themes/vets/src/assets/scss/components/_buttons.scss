@@ -1,8 +1,42 @@
-.sites-button {
-  background: $primary-color;
-  font-size: 1.25rem;
-  font-weight: bold;
-  box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
-  border-radius: 3px;
-  border: none;
+// Sourced from https://codepen.io/sreucherand/pen/gHDaI
+.vets-button, .vets-button svg rect {
+  width: 160px;
+  height: 50px;
+}
+.vets-button {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 56px;
+  text-align: center;
+  // border-radius: 2px;
+  color: $white;
+  cursor: pointer;
+  overflow: hidden;
+  background: $vets-orange;
+}
+.vets-button:hover {
+  background: none;
+  color: $vets-orange;
+}
+.vets-button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.vets-button svg rect {
+  top: 0;
+  left: 0;
+  fill: none;
+  stroke: $white;
+  stroke-width: 3;
+  stroke-dasharray: 422, 0;
+  stroke-dashoffset: 0;
+  transition: all 900ms cubic-bezier(0.190,  1.000, 0.220, 1.000);
+}
+.vets-button:hover svg rect {
+  stroke: $vets-orange;
+  stroke-width: 6;
+  stroke-dasharray: 110, 312;
+  stroke-dashoffset: 186;
 }
