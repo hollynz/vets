@@ -96,3 +96,8 @@
 .vets-logo {
   max-width: 220px;
 }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: $vets-black transparent transparent;
+  margin-top: -1px;
+}

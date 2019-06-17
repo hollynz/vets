@@ -9,18 +9,22 @@
         </p>
         <hr class="vets-hr">
         <div class="vets-buttons">
-            <div class="vets-button inverted">
-                <svg>
-                    <rect />
-                </svg>
-                <span>Our Services</span>
-            </div>
-            <div class="vets-button">
-                <svg>
-                    <rect />
-                </svg>
-                <span>Meet our Team!</span>
-            </div> 
+            <a href="http://localhost:3000/vets/services/glossary/ ">
+                <div class="vets-button inverted">
+                    <svg>
+                        <rect />
+                    </svg>
+                    <span>Our Services</span>
+                </div>
+            </a>
+            <a href="#vetsTeam">
+                <div class="vets-button">
+                    <svg>
+                        <rect />
+                    </svg>
+                    <span>Meet our Team!</span>
+                </div> 
+            </a>
         </div>
     </div>
     <div class="vets-down-arrow-container">
@@ -37,7 +41,7 @@
 
 <div class="vets-vl"></div>
 
-<div class="grid-container vets-team">
+<div id="vetsTeam" class="grid-container vets-team">
     <?php
     /**
     * Setup query to show the team post type with all posts.

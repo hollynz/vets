@@ -93,8 +93,8 @@ if ( !function_exists('vets_setup')) :
         register_nav_menus(array(
             'healthcare-menu' => __('Healthcare'),
             'surgical-menu' => __('Surgical'),
-            'wellbeing-menu' => __('Wellbeing')
-            // 'footer-menu' => __('Footer'),
+            'wellbeing-menu' => __('Wellbeing'),
+            'footer-menu' => __('Footer')
             // 'social-menu' => __('Social'),
         ));
 

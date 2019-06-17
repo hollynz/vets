@@ -1,5 +1,5 @@
 .vets-home-hero {
-    height: 96vh;
+    height: 100vh;
     background: url('../images/vets/hero-charlie.jpg');
     background-size: cover;
     display: flex;
@@ -15,14 +15,14 @@
         .vets-hr {
             max-width: 55%;
             margin: 0;
-            border-bottom: 1px solid $white;
+            border-bottom: 1.2px solid $white;
         }
         .vets-buttons {
             display: flex;
             justify-content: flex-end;
             max-width: 55%;
             margin-top: 3%;
-            .vets-button {
+            a {
                 margin-left: 6%;
             }
             .vets-button.inverted {
@@ -78,6 +78,7 @@
     }
     .vets-team {
         margin: 10% auto;
+        padding-top: 2%;
         width: 55%;
         .vets-team-member {
             display: flex;
