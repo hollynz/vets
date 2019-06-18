@@ -1,11 +1,13 @@
 body {
     font-family: $vets-khula;
+    color: $vets-black;
 }
 
 .vets-heading-size-large, .vets-heading-size-small {
-    color: $vets-orange;
-    font-family: $vets-lato;
+    color: $vets-blue;
+    font-family: $vets-poiret;
     letter-spacing: $vets-heading-spacing;
+    font-weight: 700;
 }
 .vets-heading-size-large {
     font-size: $vets-heading-size-large;
@@ -22,7 +24,7 @@ body {
 }
 
 a {
-    color: $white;
+    color: $vets-orange;
 }
 
 a:hover {
@@ -30,5 +32,9 @@ a:hover {
 }
 
 a:focus {
-    color: $white;
+    color: $vets-yellow;
+}
+
+.bold {
+    font-weight: 600;
 }

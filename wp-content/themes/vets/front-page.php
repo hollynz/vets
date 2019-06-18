@@ -22,7 +22,7 @@
                     <svg>
                         <rect />
                     </svg>
-                    <span>Meet our Team!</span>
+                    <span>Meet our Team</span>
                 </div> 
             </a>
         </div>
@@ -39,53 +39,63 @@
 
 <div id="vetsHomeContent" class="vets-home-content">
 
-<div class="vets-vl"></div>
+    <div class="vets-vl"></div>
 
-<div id="vetsTeam" class="grid-container vets-team">
-    <?php
-    /**
-    * Setup query to show the team post type with all posts.
-    * Output is title with image and exercpt.
-    */
-    $args = array(  
-        'post_type' => 'team-members',
-        'post_status' => 'publish',
-        // 'posts_per_page' => 2
-    );
-
-    $loop = new WP_Query( $args );
-    $count = 0;
-        
-    while ( $loop->have_posts() ) : $loop->the_post();
-    ?>
-    <div class="vets-team-member">
-        <div class="vets-team-heading">
-            <h2 class="vets-heading-size-small"> <?php the_title(); ?> </h2>
-            <h4 class="vets-subheading"> <?php the_excerpt(); ?></h4>
-        </div>
-        
-        
-        <div class="vets-team-content grid-x grid-margin-x">
-            <div class="vets-team-image cell medium-4">
-                <?php the_post_thumbnail(); ?> 
+    <div id="vetsTeam" class="grid-container vets-team">
+        <?php
+        /**
+        * Setup query to show the team post type with all posts.
+        * Output is title with image and exercpt.
+        */
+        $args = array(  
+            'post_type' => 'team-members',
+            'post_status' => 'publish'
+        );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+        ?>
+        <div class="vets-team-member">
+            <div class="vets-team-heading">
+                <h2 class="vets-heading-size-small"> <?php the_title(); ?> </h2>
+                <h4 class="vets-subheading"> <?php the_excerpt(); ?></h4>
             </div>
-            <div class="vets-team-description cell medium-8"> <?php the_content(); ?> </div>
+            
+            <div class="vets-team-content grid-x grid-margin-x">
+                <div class="vets-team-image cell medium-4">
+                    <?php the_post_thumbnail(); ?> 
+                </div>
+                <div class="vets-team-description cell medium-8"> <?php the_content(); ?> </div>
+            </div>
+        </div>
+        <?php
+        endwhile;
+        wp_reset_postdata();
+        ?>
+    </div>
+
+    <div class="vets-home-testimonials">
+        <?php 
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home-testimonials') ) : 
+            endif; 
+        ?>
+    </div>
+
+    
+</div>
+<div class="grid-container vets-services">
+    <h2 class="vets-heading-size-small"><a href="#">Our Services</a></h2>
+        <div class="grid-x grid-margin-x">
+            <div class="service cell medium-3">
+                content
+            </div>
+            <div class="service cell medium-3">
+                content
+            </div>
+            <div class="service cell medium-3">
+                content
+            </div>
         </div>
     </div>
-    <?php
-    endwhile;
-
-    wp_reset_postdata();
-    ?>
-</div>
-
-<div class="vets-home-testimonials">
-<?php 
-    if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home-testimonials') ) : 
-    endif; 
-?>
-</div>
-</div>
 
 
 <?php get_footer(); ?>

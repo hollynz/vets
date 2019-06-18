@@ -17,37 +17,38 @@
 		</iframe>
 		<div class="footer-content">
 			<div class="grid-container">
-				<div class="grid-x">
-					<div class="cell medium-3">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img class="vets-logo" src="<?php bloginfo('template_directory');?>/src/assets/images/vets/logo-transparent-white.png" alt="Vets@St.Clair">
-						</a>
-					</div>
-					<div class="footer-content-right cell medium-9 grid-x">
-						<div class="cell medium-3 primary-menu">
+					<div class="footer-content-text grid-x">
+						<div class="cell medium-4 primary-menu">
 							<?php foundationpress_top_bar_r(); ?>
 						</div>
 						<div class="cell medium-4 clinic-hours">
-							<h2>Clinic Hours</h2>
-							<p>
-								Mon/Tues
-							</p>
-							<p>
-								8.30–6.00
-							</p>
-							<p>
-								Wed–Fri
-							</p>
-							<p>
-								8.30–5.00
-							</p>
+							<div class="hours">
+							<h2 class="vets-heading-size-small">Clinic Hours</h2>
+
+								<p class="subheading">
+									Mon/Tues
+								</p>
+								<p>
+									8.30–6.00
+								</p>
+								<p class="subheading">
+									Wed–Fri
+								</p>
+								<p>
+									8.30–5.00
+								</p>
+							</div>
 						</div>
-						<div class="cell medium-5 contact-details">
+						<div class="cell medium-4 contact-details">
 							<?php get_template_part('template-parts/vets-contact-menu'); ?>
+							<div class="vets-contact-item facebook">
+								<a href="https://www.facebook.com/pages/category/Veterinarian/Vets-at-St-Clair-109278152427055/" target="_blank">
+									<div><p>Become our Friend!</p></div><i class="fab fa-facebook-square"></i>
+								</a>
+							</div>
 						</div>
-					</div>
-					
-				</div>		
+							
+					</div>	
 			</div>
 		</div>
 	</div>

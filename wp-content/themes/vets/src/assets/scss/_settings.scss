@@ -875,7 +875,7 @@ $xy-block-grid-max: 8;
 // 57. Vets Colours
 // -----------
 
-$vets-orange: #BB4D0B;
+$vets-orange: #bb4d0b;
 $vets-yellow: #F2AC16;
 $vets-blue: #0E1A64;
 $vets-black: #222222;
@@ -886,6 +886,8 @@ $vets-light-grey: #d7d7d7;
 // -----------
 $vets-lato: 'Lato', sans-serif;
 $vets-khula: 'Khula', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+$vets-poiret: 'Poiret One', cursive;
 
 // 59. Vets Sizing/Spacing
 // -----------

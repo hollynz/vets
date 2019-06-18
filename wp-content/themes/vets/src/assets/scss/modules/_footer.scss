@@ -2,9 +2,11 @@
   width: 100%;
   padding: 0;
   margin: 10% 0;
+  margin-top: 0;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
+  font-size: 1em;
   .map {
     border: none;
     width: 100%;
@@ -12,22 +14,37 @@
     padding: 0;
     margin: 0;
   }
+  .footer-content, .is-dropdown-submenu {
+    background: $vets-black;
+  }
   .footer-content {
-    height: 400px;
-    background: $vets-orange;
     margin: 0;
-    padding: 4%;
+    padding: 2%;
     color: $white;
-    .footer-content-right {
+    .footer-content-text {
       display: flex;
       justify-content: space-around;
       .primary-menu, .contact-details {
-        margin-top: 3%;
+        margin-top: 4%;
       }
       .primary-menu {
         .desktop-menu {
           display: flex;
           flex-direction: column;
+          a {
+            color: $white;
+          }
+          a:hover {
+            color: $vets-orange;
+          }
+        }
+        .is-dropdown-submenu {
+          border: none;
+          top: -100%;
+          left: 30%;
+          a {
+            font-weight: 700;
+          }
         }
         .dropdown.menu  {
           &> li.is-dropdown-submenu-parent {
@@ -40,9 +57,9 @@
                 margin-top: -6px;
               }
               &:hover {
-                color: $vets-black;
+                color: $vets-orange;
                 &::after {
-                  border-color: $vets-black transparent transparent;
+                  border-color: $vets-orange transparent transparent;
                 }
               }
   
@@ -52,11 +69,67 @@
       }
       .clinic-hours {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .hours {
+          border: solid 1px rgba(255, 255, 255, 0.1);
+          border-radius: 4px;
+          padding: 3% 8%;
+          .vets-heading-size-small  {
+            margin-bottom: 4%;
+            color: $white;
+          }
+          .subheading {
+            font-weight: 700;
+            font-size: 120%;
+            margin-bottom: 1%;
+          }
+        }
       }
       .contact-details {
-        .vets-nav-top-item {
+        .vets-contact-item {
           display: flex;
           flex-direction: row-reverse;
+          font-size: 1.2em;
+          p {
+            margin-right: 10px;
+          }
+          i {
+            font-size: 1.2em;
+            color: $white;
+          }
+        }
+        .vets-contact-item.facebook a {
+          margin-top: 4%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          color: $vets-orange;
+          // background: rgba(255, 255, 255, 0.2);
+          border: $vets-orange solid 1px;
+          // border-radius: 4px;
+          padding: 2% 3%;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            p {
+              margin: 0;
+              padding-top: 2%;
+              margin-right: 6px;
+            }
+          }
+          .fa-facebook-square {
+            color: $vets-orange;
+            font-size: 1.9em;
+         }
+         .fa-facebook-square:hover {
+            // color: $vets-blue;
+         }
         }
       }
     }

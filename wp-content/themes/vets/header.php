@@ -26,6 +26,11 @@
 	<header class="site-header" role="banner">
 		<div class="grid-container vets-nav-top">
 			<?php get_template_part('template-parts/vets-contact-menu'); ?>
+			<div class="vets-contact-item">
+				<a href="https://www.facebook.com/pages/category/Veterinarian/Vets-at-St-Clair-109278152427055/" target="_blank">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+			</div>
 		</div>
 
 		<div class="grid-container vets-nav">
