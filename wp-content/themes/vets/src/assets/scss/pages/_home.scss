@@ -60,8 +60,8 @@
                 color: $vets-orange;
             }
         }
-        .vets-down-arrow:hover {
-        //    Bounce animation
+        .vets-down-arrow:hover i{
+            color: $white;
         }
     }
     
@@ -131,20 +131,34 @@
     }
 }
 .vets-services {
-    padding: 8%;
+    padding: 8% 0;
     text-align: center;
     .vets-heading-size-small {
-        color: $vets-orange;
+        color: $white;
         // font-family: $vets-khula;
         margin-bottom: 5%;
     }
     .grid-x {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         .service {
-            height: 200px;
-            width: 200px;
-            background: blue;
+            height: 300px;
+            width: 300px;
+        }
+        .service.our-services {
+            background: url('../images/vets/services-yellow.jpg');
+            background-size: cover;
+            background-position: 0% 25%;
+        }
+        .service.appointments {
+            background: url('../images/vets/services-red.jpg');
+            background-size: cover;
+            background-position: 0% 85%;
+        }
+        .service.pet-care {
+            background: url('../images/vets/services-pink.jpg');
+            background-size: cover;
+            background-position: 0% 15%;
         }
     }
 }

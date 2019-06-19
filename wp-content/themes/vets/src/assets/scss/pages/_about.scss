@@ -1,0 +1,53 @@
+.vets-about-hero {
+    height: 50vh;
+    background: url('../images/vets/hero-charlie.jpg');
+    background-size: cover;
+    .vets-hero-content {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .about-tabs {
+            position: absolute;
+            margin: 0 auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .tab {
+                height: 160px;
+                width: 340px;
+                cursor: pointer;
+                .vets-heading-size-small {
+                    color: $white;
+                    font-size: 1.8em;
+                }
+            }
+            .tab.our-services {
+                background: url('../images/vets/services-yellow.jpg');
+                background-size: cover;
+                background-position: 0% 25%;
+            }
+            .tab.appointments {
+                background: url('../images/vets/services-red.jpg');
+                background-size: cover;
+                background-position: 0% 85%;
+            }
+            .tab.pet-care {
+                background: url('../images/vets/services-pink.jpg');
+                background-size: cover;
+                background-position: 0% 15%;
+            }
+        }
+    }
+}
+
+.vets-home-content.about {
+    .vets-services {
+        text-align: left;
+
+    }
+}

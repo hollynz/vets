@@ -9,21 +9,21 @@
         </p>
         <hr class="vets-hr">
         <div class="vets-buttons">
-            <a href="http://localhost:3000/vets/services/glossary/ ">
-                <div class="vets-button inverted">
+            <a href="http://localhost:3000/vets/services/health-checks">
+                <button class="vets-button inverted">
                     <svg>
                         <rect />
                     </svg>
                     <span>Our Services</span>
-                </div>
+                </button>
             </a>
             <a href="#vetsTeam">
-                <div class="vets-button">
+                <button class="vets-button">
                     <svg>
                         <rect />
                     </svg>
                     <span>Meet our Team</span>
-                </div> 
+                </button> 
             </a>
         </div>
     </div>
@@ -83,17 +83,29 @@
     
 </div>
 <div class="grid-container vets-services">
-    <h2 class="vets-heading-size-small"><a href="#">Our Services</a></h2>
+    <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">What To Expect</a></h2>
         <div class="grid-x grid-margin-x">
-            <div class="service cell medium-3">
-                content
+            <div>
+            <a href="http://localhost:3000/vets/services/health-checks">
+                    <div class="service our-services cell medium-4">
+                        <h2 class="vets-heading-size-small">Healthcare Services</h2>
+                    </div>
+                </a>
             </div>
-            <div class="service cell medium-3">
-                content
-            </div>
-            <div class="service cell medium-3">
-                content
-            </div>
+                <div>
+                <a href="http://localhost:3000/vets/appointments">
+                    <div class="service appointments cell medium-4">
+                        <h2 class="vets-heading-size-small">Appointments</h2>
+                    </div>
+                </a>
+                </div>
+                <div>
+                <a href="http://localhost:3000/vets/pet-care/glossary">
+                    <div class="service pet-care cell medium-4">
+                        <h2 class="vets-heading-size-small">Pet Care Advice</h2>
+                    </div>
+                </a>
+                </div>
         </div>
     </div>
 

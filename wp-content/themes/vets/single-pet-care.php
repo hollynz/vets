@@ -29,8 +29,8 @@
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
             <div class="cell medium-4">
-            <h2 class="">SERVICES</h2>
-                <?php get_template_part( 'library/menu-services' ); ?>
+                <h2 class="">PET CARE</h2>
+                <?php get_template_part( 'library/menu-pet-care' ); ?>
             </div>
             <div class="cell medium-8">
                 <?php

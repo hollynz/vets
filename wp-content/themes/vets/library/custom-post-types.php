@@ -10,13 +10,29 @@
                 ),
                 'public' => true,
                 // 'has_archive' => true,
-                'menu_position' => 5,
+                'menu_position' => 2,
                 'supports' => array(
                     'title',
                     'editor'
                 ),
                 // non-custom taxonomies
                 'taxonomies' => array('category')
+            )
+        );
+        register_post_type(
+            'pet-care',
+            array(
+                'labels' => array(
+                    'name' => __('Pet Care'),
+                    'singular_name' => __('Pet Care')
+                ),
+                'public' => true,
+                // 'has_archive' => true,
+                'menu_position' => 3,
+                'supports' => array(
+                    'title',
+                    'editor'
+                )
             )
         );
         register_post_type(
@@ -28,7 +44,7 @@
                 ),
                 'public' => true,
                 // 'has_archive' => true,
-                'menu_position' => 6,
+                'menu_position' => 5,
                 'supports' => array(
                     'title',
                     'editor',

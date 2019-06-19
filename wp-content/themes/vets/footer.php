@@ -43,11 +43,18 @@
 							<?php get_template_part('template-parts/vets-contact-menu'); ?>
 							<div class="vets-contact-item facebook">
 								<a href="https://www.facebook.com/pages/category/Veterinarian/Vets-at-St-Clair-109278152427055/" target="_blank">
-									<div><p>Become our Friend!</p></div><i class="fab fa-facebook-square"></i>
+									<button class="vets-button">
+										<svg>
+											<rect />
+										</svg>
+										<p>
+											<span>Become our Friend!</span>
+											<i class="fab fa-facebook-square"></i>
+										</p>
+									</button>
 								</a>
 							</div>
-						</div>
-							
+						</div>	
 					</div>	
 			</div>
 		</div>

@@ -91,11 +91,9 @@ if ( !function_exists('vets_setup')) :
 
         //register menus
         register_nav_menus(array(
-            'healthcare-menu' => __('Healthcare'),
-            'surgical-menu' => __('Surgical'),
-            'wellbeing-menu' => __('Wellbeing'),
+            'services-menu' => __('Services'),
+            'pet-care-menu' => __('Pet Care'),
             'footer-menu' => __('Footer')
-            // 'social-menu' => __('Social'),
         ));
 
         //set the permalink structure
@@ -107,3 +105,8 @@ if ( !function_exists('vets_setup')) :
 endif;
 add_action('after_setup_theme', 'vets_setup');
 
+// removes menu item from admin dashboard menu
+function remove_post() { 
+    remove_menu_page('edit.php');
+}
+add_action('admin_menu', 'remove_post');
