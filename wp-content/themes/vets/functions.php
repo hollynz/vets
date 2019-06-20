@@ -55,12 +55,15 @@ require_once( 'library/responsive-images.php' );
 require_once( 'library/gutenberg.php' );
 
 /** Customization */
+require_once( 'library/customization.php' );
 
 /** Custom post types */
 require_once( 'library/custom-post-types.php' );
 
-/** Custom post types */
-require_once( 'library/custom-meta-boxes.php' );
+/** Custom meta boxes */
+require_once( 'library/custom-meta-box-hobbies.php' );
+require_once( 'library/custom-meta-box-qualifications.php' );
+
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );

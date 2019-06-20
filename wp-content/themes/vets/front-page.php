@@ -37,7 +37,7 @@
 
 </div>
 
-<div id="vetsHomeContent" class="vets-home-content">
+<div id="vetsHomeContent" class="vets-content">
 
     <div class="vets-vl"></div>
 
@@ -53,18 +53,52 @@
         );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
+        $meta = get_post_meta( $post->ID, 'hobbies', true );
         ?>
         <div class="vets-team-member">
             <div class="vets-team-heading">
                 <h2 class="vets-heading-size-small"> <?php the_title(); ?> </h2>
-                <h4 class="vets-subheading"> <?php the_excerpt(); ?></h4>
+                <h4 class="vets-subheading">— <?php echo get_post_meta( get_the_ID(), 'vets_qualifications_content', true ); ?></h4>
             </div>
             
             <div class="vets-team-content grid-x grid-margin-x">
                 <div class="vets-team-image cell medium-4">
                     <?php the_post_thumbnail(); ?> 
                 </div>
-                <div class="vets-team-description cell medium-8"> <?php the_content(); ?> </div>
+                <div class="vets-team-description cell medium-8"> <?php the_content(); ?> 
+                    <div class="hobbies">
+                        <p>When not at work, I will be:</p>
+                        <div class="hobbies-list">
+                            <ul>
+                                <?php if (is_array($meta) && isset($meta['hobby1']) && $meta['hobby1'] != '') { 
+                                    echo '<li><i class="fas fa-paw"></i>' . $meta['hobby1'] . '</li>'; 
+                                }
+                                ?>
+                                <?php if (is_array($meta) && isset($meta['hobby2']) && $meta['hobby2'] != '') { 
+                                    echo '<li><i class="fas fa-paw"></i>' . $meta['hobby2'] . '</li>'; 
+                                }
+                                ?>
+                                <?php if (is_array($meta) && isset($meta['hobby3']) && $meta['hobby3'] != '') { 
+                                    echo '<li><i class="fas fa-paw"></i>' . $meta['hobby3'] . '</li>'; 
+                                }
+                                ?>
+                                <?php if (is_array($meta) && isset($meta['hobby4']) && $meta['hobby4'] != '') { 
+                                    echo '<li><i class="fas fa-paw"></i>' . $meta['hobby4'] . '</li>'; 
+                                }
+                                ?>
+                                <?php if (is_array($meta) && isset($meta['hobby5']) && $meta['hobby5'] != '') { 
+                                    echo '<li><i class="fas fa-paw"></i>' . $meta['hobby5'] . '</li>'; 
+                                }
+                                ?>
+                                <?php if (is_array($meta) && isset($meta['hobby6']) && $meta['hobby6'] != '') { 
+                                    echo '<li><i class="fas fa-paw"></i>' . $meta['hobby6'] . '</li>'; 
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <?php

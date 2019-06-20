@@ -67,7 +67,7 @@
     
 }
 
-.vets-home-content {
+.vets-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +76,7 @@
     position: relative;
     div.vets-vl {
         border-left: 10px solid $vets-yellow;
-        height: 108%;
+        height: 114%;
         z-index: -1;
         margin: 0 auto;
         position: absolute;
@@ -110,6 +110,20 @@
                         margin: auto;
                     }
                 }
+                .hobbies {
+                    font-size: 110%;
+                    color: $vets-black;
+                    p {
+                        // font-weight: 700;
+                        font-size: 110%;
+                        color: $vets-blue;
+                    }
+                    i {
+                        margin-right: 2%;
+                        font-size: 70%;
+                        color: $vets-blue;
+                    }
+                }
             }
         }
         .vets-team-member:nth-child(odd) {
@@ -130,8 +144,9 @@
         }
     }
 }
+
 .vets-services {
-    padding: 8% 0;
+    padding: 12% 0;
     text-align: center;
     .vets-heading-size-small {
         color: $white;
@@ -162,4 +177,3 @@
         }
     }
 }
-

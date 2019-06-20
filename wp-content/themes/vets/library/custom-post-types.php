@@ -48,8 +48,7 @@
                 'supports' => array(
                     'title',
                     'editor',
-                    'thumbnail',
-                    'excerpt'
+                    'thumbnail'
                 )
             )
         );

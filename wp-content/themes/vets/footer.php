@@ -24,7 +24,6 @@
 						<div class="cell medium-4 clinic-hours">
 							<div class="hours">
 							<h2 class="vets-heading-size-small">Clinic Hours</h2>
-
 								<p class="subheading">
 									Mon/Tues
 								</p>
@@ -40,7 +39,7 @@
 							</div>
 						</div>
 						<div class="cell medium-4 contact-details">
-							<?php get_template_part('template-parts/vets-contact-menu'); ?>
+							<?php get_template_part('library/vets-contact-menu'); ?>
 							<div class="vets-contact-item facebook">
 								<a href="https://www.facebook.com/pages/category/Veterinarian/Vets-at-St-Clair-109278152427055/" target="_blank">
 									<button class="vets-button">

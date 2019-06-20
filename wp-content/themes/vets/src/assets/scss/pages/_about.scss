@@ -45,9 +45,12 @@
     }
 }
 
-.vets-home-content.about {
+.vets-content.about {
     .vets-services {
+        padding: 8%;
         text-align: left;
-
+        .services-menu {
+            margin-top: 20%;
+        }
     }
 }

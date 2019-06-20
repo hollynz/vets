@@ -86,10 +86,11 @@
       color: $vets-black;
       font-size: 1.1em;  
       padding: 16px 26px;
-    }
-    a:hover {
-      border-bottom: 1px solid $vets-black;
       color: $vets-black;
+      position: relative;
+      &:hover {
+        color: $vets-orange;
+      }
     }
   }
 }
@@ -98,7 +99,18 @@
   max-width: 220px;
 }
 
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  border-color: $vets-black transparent transparent;
-  margin-top: -1px;
+.dropdown.menu {
+  li.is-dropdown-submenu-parent {
+    a {
+      &::after {
+        border-color: $vets-black transparent transparent;
+        margin-top: -2px;
+      }
+      &:hover {
+        &::after {
+          border-color: $vets-orange transparent transparent;
+        }
+      }
+    }
+  } 
 }

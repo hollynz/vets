@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<div id="vetsHomeContent" class="about vets-home-content">
+<div id="vetsAboutContent" class="about vets-content">
 
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
             <div class="cell medium-4">
-            <h2 class="">SERVICES</h2>
+            <!-- <h2 class="">SERVICES</h2> -->
                 <?php get_template_part( 'library/menu-services' ); ?>
             </div>
             <div class="cell medium-8">
