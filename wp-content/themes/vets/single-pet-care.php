@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<div id="vetsHomeContent" class="about vets-home-content">
+<div id="vetsAboutContent" class="about vets-content">
 
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
             <div class="cell medium-4">
-                <h2 class="">PET CARE</h2>
+                <h3 class="pet-care-heading">Pet Care</h3>
                 <?php get_template_part( 'library/menu-pet-care' ); ?>
             </div>
             <div class="cell medium-8">
@@ -38,7 +38,7 @@
                 if(have_posts()):
                     while(have_posts()): the_post();
                     ?>
-                    <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
+                    <?php the_title('<h2 class="pet-care-heading vets-heading-size-large">', '</h2>'); ?>
                     <div class="entry-content">
                         <?php the_content(); ?>
                     </div>

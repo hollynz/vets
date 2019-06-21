@@ -46,11 +46,30 @@
 }
 
 .vets-content.about {
+    h2.services-heading.vets-heading-size-large {
+        color: $vets-yellow;
+    }
+    h2.pet-care-heading.vets-heading-size-large {
+        color: $vets-pink;
+    }
     .vets-services {
         padding: 8%;
         text-align: left;
+        h3 {
+            font-family: $vets-poiret;
+            font-weight: 700;
+            margin-bottom: 4%;
+        }
+        h3.services-heading {
+            font-size: 1.6em;
+            color: $vets-yellow;
+        }
+        h3.pet-care-heading {
+            font-size: 1.6em;
+            color: $vets-pink;
+        }
         .services-menu {
-            margin-top: 20%;
+            // margin-top: 20%;
         }
     }
 }
