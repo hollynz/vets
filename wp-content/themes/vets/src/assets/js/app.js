@@ -8,5 +8,6 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 import './lib/smooth-scroll';
+import './lib/nav-dropdown-active-state';
 
 $(document).foundation();
