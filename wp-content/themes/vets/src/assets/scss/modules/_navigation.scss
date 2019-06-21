@@ -80,6 +80,11 @@
 }
 
 #menu-primary {
+  // active state for non-dropdown menu links (including dropdown children links)
+  .current-menu-item:not(.is-dropdown-submenu-parent) a{
+    color: $vets-orange;
+    font-weight: 700;
+  }
   .menu-item {
     a {
       font-family: $vets-lato;
@@ -90,16 +95,10 @@
       position: relative;
       &:hover {
         color: $vets-orange;
+        font-weight: 700;
       }
     }
   }
-}
-
-.vets-logo {
-  max-width: 220px;
-}
-
-.dropdown.menu {
   li.is-dropdown-submenu-parent {
     a {
       &::after {
@@ -112,12 +111,18 @@
         }
       }
     }
-  } 
+  }
+  // active state for dropdown menu links
+  li.is-dropdown-submenu-parent.current-menu-parent > a {
+    color: $vets-orange;
+    font-weight: 700;
+    &::after {
+      border-color: $vets-orange transparent transparent;
+      margin-top: -2px;
+    }
+  }
 }
 
-.current-menu-item{
-  background: yellow;
-}
-.current-menu-ancestor{
-  background: yellow;
+.vets-logo {
+  max-width: 220px;
 }

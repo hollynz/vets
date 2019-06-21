@@ -60,7 +60,9 @@ require_once( 'library/customization.php' );
 /** Custom post types */
 require_once( 'library/custom-post-types.php' );
 
-/** Custom meta boxes */
+/** Custom meta boxes
+ *  Code tutorial sourced from: https://www.taniarascia.com/wordpress-part-three-custom-fields-and-metaboxes/?fbclid=IwAR1YhMD_XX_cdfocxwyZSKD14IpmYBXQX-E7GTMIZPO7MZ91Lra3eAw3x9Y 
+ * */
 require_once( 'library/custom-meta-box-hobbies.php' );
 require_once( 'library/custom-meta-box-qualifications.php' );
 

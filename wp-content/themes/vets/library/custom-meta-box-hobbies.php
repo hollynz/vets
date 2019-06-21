@@ -1,4 +1,3 @@
-<!-- Code tutorial sourced from: https://www.taniarascia.com/wordpress-part-three-custom-fields-and-metaboxes/?fbclid=IwAR1YhMD_XX_cdfocxwyZSKD14IpmYBXQX-E7GTMIZPO7MZ91Lra3eAw3x9Y -->
 <?php
 
 function add_hobbies_meta_box() {

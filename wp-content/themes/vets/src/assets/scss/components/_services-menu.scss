@@ -16,6 +16,10 @@
             a:hover {
                 color: $vets-black;
             }
+            .current-menu-item a, .current-menu-ancestor a {
+                font-weight: 700;
+                color: $vets-orange;
+            }
         } 
     h3 {
         font-size: 22px;

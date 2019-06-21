@@ -10,7 +10,7 @@
                 ),
                 'public' => true,
                 // 'has_archive' => true,
-                'menu_position' => 2,
+                'menu_position' => 5,
                 'supports' => array(
                     'title',
                     'editor'
@@ -28,7 +28,7 @@
                 ),
                 'public' => true,
                 // 'has_archive' => true,
-                'menu_position' => 3,
+                'menu_position' => 5,
                 'supports' => array(
                     'title',
                     'editor'
