@@ -1,7 +1,5 @@
 .vets-about-hero {
-    height: 50vh;
-    background: url('../images/vets/hero-charlie.jpg');
-    background-size: cover;
+    background: $vets-black;
     .vets-hero-content {
         width: 100%;
         height: inherit;
@@ -52,24 +50,28 @@
     h2.pet-care-heading.vets-heading-size-large {
         color: $vets-pink;
     }
+    .entry-content {
+        margin-top: 5%;
+    }
     .vets-services {
-        padding: 8%;
+        padding: 6%;
         text-align: left;
+        hr {
+            width: 45%;
+            margin: 4%;
+            margin-left: 0;
+        }
         h3 {
             font-family: $vets-poiret;
             font-weight: 700;
             margin-bottom: 4%;
+            font-size: 1.8em;
         }
         h3.services-heading {
-            font-size: 1.6em;
             color: $vets-yellow;
         }
         h3.pet-care-heading {
-            font-size: 1.6em;
             color: $vets-pink;
-        }
-        .services-menu {
-            // margin-top: 20%;
         }
     }
 }
