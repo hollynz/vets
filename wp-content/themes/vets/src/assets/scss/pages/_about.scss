@@ -9,19 +9,38 @@
         .about-tabs {
             position: absolute;
             margin: 0 auto;
-            bottom: 0;
+            top: 100px;
             left: 0;
             right: 0;
             width: 100%;
             display: flex;
             justify-content: center;
             .tab {
-                height: 160px;
-                width: 340px;
+                margin: 0 10px;
+                height: 220px;
+                width: 360px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 10%;
                 cursor: pointer;
                 .vets-heading-size-small {
                     color: $white;
                     font-size: 1.8em;
+                }
+                i, i.fa-phone-alt {
+                    color: $white;
+                    font-size: 2.6em;
+                }
+                hr.is-active {
+                    display: block;
+                    border: $white 1px solid;
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                hr {
+                    display: none;
                 }
             }
             .tab.our-services {
@@ -43,6 +62,10 @@
     }
 }
 
+.vets-content {
+    margin: 10% 0;
+}
+
 .vets-content.about {
     h2.services-heading.vets-heading-size-large {
         color: $vets-yellow;
@@ -51,10 +74,11 @@
         color: $vets-pink;
     }
     .entry-content {
-        margin-top: 5%;
+        margin: 5% 0;
+        margin-bottom: 7%;
     }
     .vets-services {
-        padding: 6%;
+        padding: 0 6%;
         text-align: left;
         hr {
             width: 45%;
@@ -72,6 +96,79 @@
         }
         h3.pet-care-heading {
             color: $vets-pink;
+        }
+    }
+    .contact-button {
+        margin: auto;
+    }
+}
+
+.vets-content.appointments {
+    background: $white;
+    .blurb {
+        margin: 2% auto;
+        margin-top: 4%;
+        width: 80%;
+        h2.vets-heading-size-small {
+            text-align: center;
+            color: $vets-orange;
+        }
+    }
+    hr {
+        margin: 0 auto;
+        border-bottom-color: $vets-red;
+        width: 80%;
+        margin-bottom: 4%;
+    }
+    .vets-vl {
+        height: 200%;
+        border-color: $vets-red;
+    }
+    .grid-y {
+        padding: 0 4%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .item:nth-child(odd) {
+            margin-right: 30vw;
+        }
+        .item:nth-child(even) {
+            margin-left: 30vw;
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        .item {
+            padding: 2%;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            .number {
+                margin: 0;
+                background: $vets-red;
+                border: 4px solid $white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                p {
+                    margin: 0;
+                    font-size: 1.6em;
+                    margin-top: 12%;
+                    color: $white;
+                }
+            }
+            p {
+                color: $vets-black;
+                font-size: 1.4em;
+                margin: 0 4%;
+                margin-top: 5%;
+            }
         }
     }
 }

@@ -20,15 +20,20 @@
 }
 
 .vets-content.contact {
-    padding-top: 4%;
+    margin: 4% 0;
+    .blurb {
+        width: 50%;
+        margin: 2%;
+        text-align: center;
+        font-size: 1.2em;
+    }
     .contact-form-container {
         width: 45vw;
         .fm-form-container {
             width: 100%;
             .vets-button {
-                margin: auto;
+                margin: 4% auto;
             }
         }
     }
-    
 }

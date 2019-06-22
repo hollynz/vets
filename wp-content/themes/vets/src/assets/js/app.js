@@ -10,5 +10,6 @@ import Foundation from 'foundation-sites';
 import './lib/smooth-scroll';
 import './lib/nav-dropdown-active-state';
 import './lib/form-maker-contact-form-buttons';
+import './lib/about-tabs-active-state';
 
 $(document).foundation();

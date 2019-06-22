@@ -37,7 +37,7 @@
 
 </div>
 
-<div id="vetsHomeContent" class="vets-content">
+<div id="vetsHomeContent" class="vets-content home">
 
     <div class="vets-vl"></div>
 
@@ -116,7 +116,7 @@
 
     
 </div>
-<div class="grid-container vets-services">
+<div class="grid-container vets-services home">
     <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">What To Expect</a></h2>
         <div class="grid-x grid-margin-x">
             <div>

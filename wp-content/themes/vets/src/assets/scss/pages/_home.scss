@@ -76,7 +76,7 @@
     position: relative;
     div.vets-vl {
         border-left: 10px solid $vets-yellow;
-        height: 114%;
+        height: 200%;
         z-index: -1;
         margin: 0 auto;
         position: absolute;
@@ -145,8 +145,10 @@
     }
 }
 
-.vets-services {
-    padding: 12% 0;
+.vets-services.home {
+    background: $white;
+    padding: 4%;
+    margin-bottom: 10%;
     text-align: center;
     .vets-heading-size-small {
         color: $white;

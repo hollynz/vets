@@ -2,29 +2,13 @@
 
 <?php get_header(); ?>
  <!-- hero image with overlayed tab menu -->
-<div class="grid-container fluid services vets-about-hero vets-half-hero">
+<div class="grid-container fluid vets-about-hero vets-half-hero">
     <div class="grid-container vets-hero-content">
-            <div class="grid-x grid-margin-x about-tabs">
-                <a href="http://localhost:3000/vets/services/health-checks">
-                    <div class="tab our-services cell medium-4">
-                        <h2 class="vets-heading-size-small">Our Services</h2>
-                    </div>
-                </a>
-                <a href="http://localhost:3000/vets/appointments">
-                    <div class="tab appointments cell medium-4">
-                        <h2 class="vets-heading-size-small">Appointments</h2>
-                    </div>
-                </a>
-                <a href="http://localhost:3000/vets/pet-care/glossary">
-                    <div class="tab pet-care cell medium-4">
-                        <h2 class="vets-heading-size-small">Pet Care</h2>
-                    </div>
-                </a>
-            </div>
+        <?php get_template_part('library/about-tabs'); ?>
     </div>
 </div>
 
-<div id="vetsAboutContent" class="about vets-content">
+<div class="about vets-content">
 
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
@@ -53,7 +37,14 @@
                     endif;
                     
                 ?>
-                <div class="button"></div>
+                <a href="http://localhost:3000/vets/contact-us" class="contact-button">
+                    <button class="vets-button">
+                        <svg>
+                            <rect />
+                        </svg>
+                        <span>Get in Touch</span>
+                    </button>
+                </a>
             </div>
         </div>
 
