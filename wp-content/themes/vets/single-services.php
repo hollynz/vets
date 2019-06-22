@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
  <!-- hero image with overlayed tab menu -->
-<div class="grid-container fluid services vets-about-hero">
+<div class="grid-container fluid services vets-about-hero vets-half-hero">
     <div class="grid-container vets-hero-content">
             <div class="grid-x grid-margin-x about-tabs">
                 <a href="http://localhost:3000/vets/services/health-checks">
@@ -30,6 +30,7 @@
         <div class="grid-x">
             <div class="cell medium-4">
                 <h3 class="services-heading">Services</h3>
+                <hr>
                 <?php get_template_part( 'library/menu-services' ); ?>
             </div>
             <div class="cell medium-8">
@@ -52,6 +53,14 @@
                     endif;
                     
                 ?>
+                <a href="http://localhost:3000/vets/contact-us">
+                    <button class="vets-button">
+                        <svg>
+                            <rect />
+                        </svg>
+                        <span>Get in Touch</span>
+                    </button>
+                </a>
             </div>
         </div>
 
