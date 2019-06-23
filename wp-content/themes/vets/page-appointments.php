@@ -5,7 +5,7 @@
     </div>
 </div>
 
-<div class="vets-content appointments">
+<div class="vets-content appointments about">
 
     <div class="vets-vl"></div>
         <div class="grid-container">

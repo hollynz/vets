@@ -8,83 +8,17 @@
         position: relative;
         .about-tabs {
             position: absolute;
-            margin: 0 auto;
             top: 100px;
             left: 0;
             right: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            .tab {
-                margin: 0 10px;
-                height: 220px;
-                width: 360px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                padding: 10%;
-                cursor: pointer;
-                .vets-heading-size-small {
-                    color: $white;
-                    font-size: 1.8em;
-                }
-                i, i.fa-phone-alt {
-                    color: $white;
-                    font-size: 2.6em;
-                }
-                hr.is-active {
-                    display: block;
-                    border: $white 1px solid;
-                    width: 60%;
-                    margin: 0 auto;
-                }
-                hr {
-                    display: none;
-                }
-            }
-            .tab.our-services {
-                background: url('../images/vets/services-yellow.jpg');
-                background-size: cover;
-                background-position: 0% 25%;
-            }
-            .tab.appointments {
-                background: url('../images/vets/services-red.jpg');
-                background-size: cover;
-                background-position: 0% 85%;
-            }
-            .tab.pet-care {
-                background: url('../images/vets/services-pink.jpg');
-                background-size: cover;
-                background-position: 0% 15%;
-            }
         }
     }
-}
-
-.vets-content {
-    margin: 10% 0;
 }
 
 .vets-content.about {
-    h2.services-heading.vets-heading-size-large {
-        color: $vets-yellow;
-    }
-    h2.pet-care-heading.vets-heading-size-large {
-        color: $vets-pink;
-    }
-    .entry-content {
-        margin: 5% 0;
-        margin-bottom: 7%;
-    }
     .vets-services {
         padding: 0 6%;
         text-align: left;
-        hr {
-            width: 45%;
-            margin: 4%;
-            margin-left: 0;
-        }
         h3 {
             font-family: $vets-poiret;
             font-weight: 700;
@@ -96,6 +30,25 @@
         }
         h3.pet-care-heading {
             color: $vets-pink;
+        }
+        hr {
+            width: 45%;
+            margin: 4%;
+            margin-left: 0;
+        }
+        .entry-content-container {
+            display: flex;
+            flex-direction: column;
+            h2.services-heading.vets-heading-size-large {
+                color: $vets-yellow;
+            }
+            h2.pet-care-heading.vets-heading-size-large {
+                color: $vets-pink;
+            }
+            .entry-content {
+                margin: 5% 0;
+                margin-bottom: 7%;
+            }
         }
     }
     .contact-button {

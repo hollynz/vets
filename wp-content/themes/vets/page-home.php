@@ -117,9 +117,12 @@
     
 </div>
 <div class="grid-container vets-services home">
-    <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">What To Expect</a></h2>
-        <div class="grid-x grid-margin-x">
-            <div>
+    <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">What We Offer</a></h2>
+    <?php get_template_part('library/about-tabs'); ?>
+    
+    
+    <!-- <div class="grid-x grid-margin-x">
+        <div>
             <a href="http://localhost:3000/vets/services/health-checks">
                     <div class="service our-services cell medium-4">
                         <h2 class="vets-heading-size-small">Healthcare Services</h2>
@@ -141,7 +144,7 @@
                 </a>
                 </div>
         </div>
-    </div>
+    </div> -->
 
 
 <?php get_footer(); ?>

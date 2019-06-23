@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="about vets-content">
+<div class="vets-content about">
 
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
@@ -17,7 +17,7 @@
                 <hr>
                 <?php get_template_part( 'library/menu-pet-care' ); ?>
             </div>
-            <div class="cell medium-8">
+            <div class="cell medium-8 entry-content-container">
                 <?php
 
                 if(have_posts()):
