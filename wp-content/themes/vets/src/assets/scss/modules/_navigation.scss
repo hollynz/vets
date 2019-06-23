@@ -1,12 +1,21 @@
 // Navigation breakpoints
 .mobile-menu,
 .site-title-bar {
-  @include hide-for(medium);
+  @include hide-for(nav);
+  background: $white;
+  border-bottom: solid 1px #d7d7d7;
+  .menu-icon {
+    left: 90%;
+    &::after {
+      background: $vets-black;
+      box-shadow: 0 7px 0 $vets-black, 0 14px 0 $vets-black;
+    }
+  }
 }
-//
+// Site left nav
 .desktop-menu,
 .site-navigation .top-bar-left {
-  @include show-for(medium);
+  @include show-for(nav);
 }
 
 // Site title
@@ -20,20 +29,43 @@
 }
 
 .nav-previous {
-  float:left;
+  float: left;
 }
 
 .nav-next {
-  float:right;
+  float: right;
+}
+
+.site-navigation.top-bar {
+  @include mq('navigation') {
+    padding: 0;
+    margin-top: 0;
+  }
 }
 
 .top-bar, .top-bar ul {
   background-color: $white;
 }
 
+
 .top-bar-right {
   align-self: flex-end;
+  @include mq('navigation') {
+    width: 100%;
+    margin: 0;
+  }
 }
+
+// .top-bar {
+//   height: 0;
+// }
+
+// .top-bar.active {
+//   @include mq('navigation') {
+//     height: 100%;
+//     transition: all 0.1s ease;
+//   }
+// }
 
 .site-header {
   z-index: 100;
@@ -43,6 +75,11 @@
   top: 0;
   background-color: $white;
   border-bottom: solid 1px $vets-light-grey;
+  .grid-container {
+    @include mq('navigation') {
+      padding: 0;
+    }
+  }
   .vets-nav-top {
     display: flex;
     justify-content: flex-end;
@@ -52,6 +89,13 @@
     margin-bottom: -30px;
     padding-top: 1%;
     padding-right: 49px;
+    @include mq('navigation') {
+      padding-right: 42px;
+      margin: 0;
+      background: $vets-black;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+    }
     .vets-contact-item {
       display: flex;
       flex-direction: row;
@@ -63,17 +107,33 @@
         margin-bottom: 0;
         font-weight: 700;
         font-size: 0.9em;
+        @include mq('navigation') {
+          color: $white;
+          font-size: 0.8em;
+          font-weight: 400;
+        }
       }
       .fas {
         color: $vets-blue;
         font-size: 1.1em;
+        @include mq('navigation') {
+          color: $vets-yellow;
+          font-size: 0.8em;
+        }
       }
       .fa-facebook-square {
         color: $vets-orange;
         font-size: 1.9em;
+        @include mq('navigation') {
+          color: $white;
+          font-size: 1.4em;
+        }
       }
       .fa-facebook-square:hover {
         color: $vets-blue;
+        @include mq('navigation') {
+          color: $vets-yellow;
+        }
       }
     };
   }
@@ -81,7 +141,7 @@
 
 #menu-primary {
   // active state for non-dropdown menu links (including dropdown children links)
-  .current-menu-item:not(.is-dropdown-submenu-parent) a{
+  .current-menu-item:not(.is-dropdown-submenu-parent) a {
     color: $vets-orange;
     font-weight: 700;
   }
@@ -125,4 +185,28 @@
 
 .vets-logo {
   max-width: 220px;
+}
+
+.mobile-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  a {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    font-family: $vets-lato;
+    color: $vets-black;
+    text-transform: uppercase;
+    font-size: 14px;  
+    font-weight: 400;
+  }
+  .submenu-toggle {
+    display: none;
+  }
+}
+
+.menu .is-active > a {
+  background: $vets-orange;
 }

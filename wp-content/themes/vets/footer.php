@@ -57,6 +57,11 @@
 					</div>	
 			</div>
 		</div>
+		<div class="footer-bottom">
+			<div>
+				<p>Copyright &copy; <?php echo date("Y"); ?></p>
+			</div>
+		</div>
 	</div>
 	
 

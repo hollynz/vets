@@ -63,6 +63,7 @@
 //  57. Vets Colours
 //  58. Vets Typography
 //  59. Vets Misc
+//  60. Vets Mixins
 
 @import 'util/util';
 @import 'global/colors';
@@ -112,6 +113,7 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0,
   medium: 640px,
+  nav: 950px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
@@ -898,3 +900,32 @@ $vets-heading-size-large: 3.5em;
 $vets-heading-size-small: 2.5em;
 $vets-subheading-size: 0.9em;
 $vets-paragraph-size-large: 1em;
+
+// 60. Vets Mixins
+// -----------
+$vets-breakpoints: (
+  "phone": 400px,
+   "phone-wide": 480px,
+   "phablet": 560px,
+   "tablet-small": 640px,
+   "tablet": 768px,
+   "navigation": 950px,
+   "tablet-wide": 1080px,
+   "desktop": 1248px,
+   "desktop-wide": 1440px,
+   "1700": 1700px,
+   "1600": 1600px,
+   "1500": 1500px
+); 
+
+@mixin mq($width, $type: max) {
+  @if map_has_key($vets-breakpoints, $width) {
+      $width: map_get($vets-breakpoints, $width);
+      @if $type == max {
+          $width: $width - 1px;
+      }
+      @media only screen and (#{$type}-width: $width) {
+          @content;
+      }
+  }
+}

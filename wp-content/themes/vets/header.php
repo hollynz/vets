@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="grid-container vets-nav">
-			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+			<div data-hide-for="nav" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
 				<!-- Mobile left nav (logo) -->
 				<div class="title-bar-left">
 					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
