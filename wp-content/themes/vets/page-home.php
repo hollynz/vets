@@ -117,7 +117,7 @@
     
 </div>
 <div class="grid-container vets-services home">
-    <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">What We Offer</a></h2>
+    <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">How Can We Help?</a></h2>
     <?php get_template_part('library/about-tabs'); ?>
     
     

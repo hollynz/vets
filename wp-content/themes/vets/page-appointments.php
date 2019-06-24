@@ -41,7 +41,14 @@
                 
             </div>
         </div>
-        
+        <a class="vets-button-link" href="http://localhost:3000/vets/contact-us">
+            <button class="vets-button">
+                <svg>
+                    <rect />
+                </svg>
+                <span>Contact Us</span>
+            </button>
+        </a>
 
     
 </div>
