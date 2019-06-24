@@ -15,24 +15,51 @@
             width: 100%;
             text-align: center;
             color: $white;
+            @include mq('phone-wide') {
+                font-size: 1.8em;
+            }
         }
     }
 }
 
 .vets-content.contact {
     margin: 4% 0;
+    @include mq('tablet') {
+        margin: 10% 0;
+    }  
     .blurb {
-        width: 50%;
+        width: 45%;
         margin: 2%;
         text-align: center;
         font-size: 1.2em;
+        @include mq('tablet-wide') {
+            width: 80%;
+            font-size: 1em;
+        }
+        @include mq('phone-wide') {
+            font-size: 0.9em;
+        }
     }
     .contact-form-container {
+        margin-top: 2%;
         width: 45vw;
+        @include mq('desktop-wide') {
+            width: 55vw;
+        }
+        @include mq('desktop') {
+            width: 65vw;
+        }
+        @include mq('tablet-wide') {
+            width: 75vw;
+        }
+        @include mq('phone-wide') {
+            width: 90vw;
+        }
         .fm-form-container {
             width: 100%;
             .vets-button {
                 margin: 4% auto;
+                margin-bottom: 0;
             }
         }
     }

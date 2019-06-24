@@ -21,13 +21,36 @@
     margin: 0;
     padding: 2%;
     color: $white;
+    @include mq('tablet') {
+      padding: 4%;
+    }
+    @include mq('tablet-small') {
+      padding: 30px;
+    }
+    @include mq('phablet') {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     .footer-content-text {
       display: flex;
       justify-content: space-around;
-      .primary-menu, .contact-details {
-        margin-top: 4%;
+      align-items: center;
+      @include mq('tablet') {
+        padding: 0 4%;
+      }
+      @include mq('tablet-small') {
+        flex-direction: column;
+      }
+      @include mq('phone-wide') {
+        padding: 0;
       }
       .primary-menu {
+        @include mq('tablet') {
+          display: none !important;
+        }
+        #menu-primary-2 {
+          display: flex !important;
+        }
         .desktop-menu {
           display: flex;
           flex-direction: column;
@@ -72,40 +95,106 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include mq('tablet') {
+          width: 50%;
+          align-items: flex-start;
+        }
+        @include mq('tablet-small') {
+          justify-content: center;
+          flex-direction: row;
+        }
+        @include mq('phablet') {
+          width: 100%;
+          margin-bottom: 5%;
+        }
         .hours {
           border: solid 1px rgba(255, 255, 255, 0.1);
           border-radius: 4px;
           padding: 3% 8%;
+          @include mq('desktop') {
+            padding: 1% 8%;
+          }
           .vets-heading-size-small  {
             margin-bottom: 4%;
             color: $white;
+            @include mq('desktop') {
+              font-size: 1.8em;
+            }
           }
           .subheading {
             font-weight: 700;
             font-size: 120%;
             margin-bottom: 1%;
+            @include mq('desktop') {
+              font-size: 1em;
+            }
+          }
+          p {
+            margin-bottom: 5%;
           }
         }
       }
       .contact-details {
+        @include mq('tablet') {
+          width: 50%;
+        }
+        @include mq('tablet-small') {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 4%;
+        }
+        @include mq('phone-wide') {
+          width: 100%;
+        }
         .vets-contact-item {
           display: flex;
           flex-direction: row-reverse;
           font-size: 1.2em;
+          @include mq('tablet-small') {
+            justify-content: center;
+            flex-direction: row;
+          }
           p {
             margin-right: 10px;
+            @include mq('desktop') {
+              font-size: 0.6em;
+            }
+            @include mq('tablet') {
+              font-size: 0.8em;
+            }
+            @include mq('tablet-small') {
+              font-size: 0.9em;
+              text-align: center;
+              margin-right: 0;
+            }
+            @include mq('tablet-small') {
+              font-size: 0.8em;
+            }
           }
           i {
             font-size: 1.2em;
             color: $vets-orange;
+            @include mq('desktop') {
+              font-size: 0.9em;
+            }
+            @include mq('tablet-small') {
+              margin-right: 3%;
+            }
           }
         }
         .vets-contact-item.facebook {
           .vets-button, .vets-button svg rect {
             width: 240px;
             height: 58px;
+            @include mq('desktop') {
+              width: 200px;
+              height: 52px;
+            }
           }
           .vets-button {
+            @include mq('phablet') {
+              margin-top: 4%;
+            }
             p {
               margin: 0;
               color: $white;
@@ -113,6 +202,9 @@
               flex-direction: row;
               justify-content: center;
               align-content: center;
+              @include mq('desktop') {
+                font-size: 0.8em;
+              }
               span {
                 padding-top: 2%;
               }
@@ -140,16 +232,21 @@
     }
   }
   .footer-bottom {
-    background: $vets-yellow;
+    border-top: solid 1px $white;
+    background: $vets-black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-    p {
-      font-size: 0.9em;
-      padding: 5%;
-      margin: 0;
+    div {
+      padding: 4px 0;
+      p {
+        font-size: 0.9em;
+        padding: 5%;
+        margin: 0;
+        color: $white;
+      }
     }
   }
 }

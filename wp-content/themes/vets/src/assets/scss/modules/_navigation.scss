@@ -56,17 +56,6 @@
   }
 }
 
-// .top-bar {
-//   height: 0;
-// }
-
-// .top-bar.active {
-//   @include mq('navigation') {
-//     height: 100%;
-//     transition: all 0.1s ease;
-//   }
-// }
-
 .site-header {
   z-index: 100;
   position: fixed;
@@ -87,14 +76,17 @@
     width: 100%;
     text-align: right;
     margin-bottom: -30px;
-    padding-top: 1%;
+    padding-top: 3%;
     padding-right: 49px;
     @include mq('navigation') {
       padding-right: 42px;
       margin: 0;
       background: $vets-black;
-      padding-top: 1.5%;
+      padding-top: 3%;
       padding-bottom: 1.5%;
+    }
+    @include mq('phone-wide') {
+      padding-right: 20px;
     }
     .vets-contact-item {
       display: flex;
@@ -102,6 +94,9 @@
       justify-content: space-between;
       align-items: flex-start;
       margin-left: 4%;
+      @include mq('phone-wide') {
+        margin-left: 3%;
+      }
       p {
         margin-left: 6px;
         margin-bottom: 0;
@@ -112,13 +107,17 @@
           font-size: 0.8em;
           font-weight: 400;
         }
+        @include mq('phone-wide') {
+          font-size: 0.6em;
+          margin-left: 4px;
+        }
       }
       .fas {
         color: $vets-blue;
         font-size: 1.1em;
         @include mq('navigation') {
           color: $vets-yellow;
-          font-size: 0.8em;
+          font-size: 0.7em;
         }
       }
       .fa-facebook-square {
@@ -185,6 +184,10 @@
 
 .vets-logo {
   max-width: 220px;
+  @include mq('phone-wide') {
+    max-width: 180px;
+    transform: translateX(-15px);
+  }
 }
 
 .mobile-menu {

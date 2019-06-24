@@ -12,12 +12,12 @@
 
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
-            <div class="cell medium-4">
+            <div class="cell medium-4 small-12">
                 <h3 class="pet-care-heading">Pet Care</h3>
                 <hr>
                 <?php get_template_part( 'library/menu-pet-care' ); ?>
             </div>
-            <div class="cell medium-8 entry-content-container">
+            <div class="cell medium-8 small-12 entry-content-container">
                 <?php
 
                 if(have_posts()):

@@ -9,7 +9,7 @@
 
     <div class="vets-vl"></div>
         <div class="grid-container">
-            <div class="blurb">
+            <div class="heading">
                 <h2 class="vets-heading-size-small">What to Expect</h2>
             </div>
             <hr>

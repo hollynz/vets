@@ -1,9 +1,9 @@
-import 'jquery';
+// import 'jquery';
 
-jQuery(function($) {
-    let burger = $('.menu-icon');
-    let dropdown = $('.top-bar');
-    burger.click(function() {
-        dropdown.toggleClass('active');
-    });
-});
+// jQuery(function($) {
+//     let burger = $('.menu-icon');
+//     let dropdown = $('.top-bar');
+//     burger.click(function() {
+//         dropdown.toggleClass('active');
+//     });
+// });
