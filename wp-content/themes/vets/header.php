@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="grid-container vets-nav">
-			<div data-hide-for="nav" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+			<div data-hide-for="nav" data-toggler data-animate="slide-in-right slide-out-right" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
 				<!-- Mobile left nav (logo) -->
 				<div class="title-bar-left">
 					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<nav class="site-navigation top-bar" data-toggler data-animate="slide-in-right slide-out-right" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
+			<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
 				<!-- Desktop left nav (logo) -->
 				<div class="top-bar-left">
 					<div class="site-desktop-title top-bar-title">
