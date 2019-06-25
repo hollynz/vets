@@ -11,6 +11,5 @@ import './lib/smooth-scroll';
 import './lib/nav-dropdown-active-state';
 import './lib/form-maker-contact-form-buttons';
 import './lib/about-tabs-active-state';
-import './lib/mobile-navigation-dropdown';
-
+import './lib/services-menu-dropdown';
 $(document).foundation();

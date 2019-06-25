@@ -13,8 +13,12 @@
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">
             <div class="cell medium-4 small-12">
-                <h3 class="services-heading">Services</h3>
-                <hr>
+                <div class="about-dropdown-heading">
+                    <h3 class="services-heading">Services</h3>
+                    <i class="fas fa-sort-down services"></i>
+                    <i class="fas fa-sort-up services"></i>
+                </div>
+                <hr class="about-menu-hr">
                 <?php get_template_part( 'library/menu-services' ); ?>
             </div>
             <div class="cell medium-8 small-12 entry-content-container">

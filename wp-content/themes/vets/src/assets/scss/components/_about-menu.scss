@@ -1,7 +1,10 @@
-.services-menu {
+.about-menu {
     font-size: 14px;
     font-family: $vets-lato;
-    .services-list {
+    @include mq('tablet-small') {
+        display: none;
+    }
+    .about-list {
         list-style: none;
         padding-left: 0;
         margin: 0;
@@ -25,5 +28,26 @@
         font-size: 22px;
         font-family: $vets-lato;
         color: $vets-orange;
+    }
+}
+
+.about-menu.is-active {
+    @include mq('tablet-small') {
+        display: flex;
+    }
+}
+
+hr.about-menu-hr {
+    width: 45%;
+    margin: 4%;
+    margin-left: 0;
+    @include mq('tablet-small') {
+        display: none;
+    }
+}
+
+hr.about-menu-hr.is-active {
+    @include mq('tablet-small') {
+        display: flex;
     }
 }

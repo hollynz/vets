@@ -93,25 +93,68 @@
     .vets-services {
         padding: 0 6%;
         text-align: left;
-        @include mq('phone-wide') {
-            margin-top: 15%;
+        @include mq('desktop-wide') {
+            margin-top: 45px;
         }
-        h3 {
-            font-family: $vets-poiret;
-            font-weight: 700;
+        @include mq('tablet') {
+            margin-top: 40px;
+        }
+        .about-dropdown-heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
             margin-bottom: 4%;
-            font-size: 1.8em;
-        }
-        h3.services-heading {
-            color: $vets-yellow;
-        }
-        h3.pet-care-heading {
-            color: $vets-pink;
-        }
-        hr {
-            width: 45%;
-            margin: 4%;
-            margin-left: 0;
+            &:hover {
+                h3.services-heading, h3.pet-care-heading, .fas.services, .fas.pet-care {
+                    @include mq('tablet-small') {
+                        color: $vets-orange;
+                    }
+                }
+            }
+            @include mq('tablet-small') {
+                cursor: pointer;
+            }
+            h3 {
+                font-family: $vets-poiret;
+                font-weight: 700;
+                font-size: 1.8em;
+                margin-bottom: 0;
+            }
+            h3.services-heading {
+                color: $vets-yellow;
+            }
+            h3.pet-care-heading {
+                color: $vets-pink;
+            }
+            .fas {
+                margin-left: 10px;
+                font-size: 1.8em;
+                display: none;
+                @include mq('tablet-small') {
+                    display: flex;
+                }
+            }
+            .fas.services {
+                color: $vets-yellow;
+            }
+            .fas.pet-care {
+                color: $vets-pink;
+            }
+            .fas.fa-sort-down.is-active {
+                @include mq('tablet-small') {
+                    display: none;
+                }
+            }
+            .fas.fa-sort-up {
+                transform: translateY(12px);
+                display: none;
+            }
+            .fas.fa-sort-up.is-active {
+                @include mq('tablet-small') {
+                    display: flex;
+                }
+            }
         }
         .entry-content-container {
             display: flex;
@@ -248,8 +291,7 @@
         }
     }
     .vets-button-link {
-        margin: 50px 0;
-        margin-top: 30px;
+        margin: 30px 0;
         .vets-button {
         background: $vets-red;
         }
