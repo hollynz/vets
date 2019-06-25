@@ -338,18 +338,23 @@
     }
     .vets-button-link {
         margin: 30px 0;
-        .vets-button {
-        background: $vets-red;
+        .vets-button, .vets-button svg rect {
+            width: 260px;
+            height: 62px;
+            background: $vets-red;
+            font-size: 1.3em;
         }
         .vets-button:hover {
-        background: none;
-        color: $vets-red;
+            background: none;
+            color: $vets-red;
         }
         .vets-button svg rect {
-        stroke: $vets-red;
+            stroke: $vets-red;
         }
         .vets-button:hover svg rect {
-        stroke: $vets-red;
+            stroke: $vets-red;
+            stroke-dasharray: 240, 370;
+            stroke-dashoffset: 277;
         }
     }
 }

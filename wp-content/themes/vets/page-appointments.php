@@ -46,7 +46,7 @@
                 <svg>
                     <rect />
                 </svg>
-                <span>Get in Touch</span>
+                <span>Book an Appointment</span>
             </button>
         </a>
 
