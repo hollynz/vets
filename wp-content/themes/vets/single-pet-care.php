@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="vets-content about">
+<div class="vets-content about pet-care">
 
     <div id="vetsServices" class="grid-container vets-services">
         <div class="grid-x">

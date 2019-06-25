@@ -1,13 +1,16 @@
 .vets-about-hero.vets-half-hero {
     background: $vets-black;
+    margin-top: 100px;
+    height: 28vh;
+    background-size: cover;
     @include mq('tablet-wide') {
-        height: 280px !important;
+        height: 280px;
     }
     @include mq('tablet') {
-        height: 280px !important;
+        height: 280px;
     }
     @include mq('phone-wide') {
-        height: 100px !important;
+        height: 120px;
     }
     .vets-hero-content {
         width: 100%;
@@ -90,6 +93,9 @@
 }
 
 .vets-content.about {
+    @include mq('phone-wide') {
+        margin-bottom: 80px;
+    }
     .vets-services {
         padding: 0 6%;
         text-align: left;
@@ -98,6 +104,9 @@
         }
         @include mq('tablet') {
             margin-top: 40px;
+        }
+        @include mq('phone-wide') {
+            margin-top: 20px;
         }
         .about-dropdown-heading {
             display: flex;
@@ -159,6 +168,31 @@
         .entry-content-container {
             display: flex;
             flex-direction: column;
+            @include mq('phone-wide') {
+                margin-top: 10px;
+            }
+            li:before {
+                content: '\f1b0';
+                font-family: 'FontAwesome';
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+                margin-left: -25px;
+            }
+            h2, h3 {
+                font-family: $vets-poiret;
+                font-weight: 700;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                @include mq('tablet') {
+                    font-size: 1.6em;
+                }
+            }
+            h2.services-heading.vets-heading-size-large, h2.pet-care-heading.vets-heading-size-large {
+                @include mq('phone-wide') {
+                    font-size: 2.6em;
+                }
+            }
             h2.services-heading.vets-heading-size-large {
                 color: $vets-yellow;
             }
@@ -173,6 +207,18 @@
     }
     .contact-button {
         margin: auto;
+    }
+}
+
+.vets-content.services {
+    h2, h3, li:before {
+        color: $vets-yellow;
+    }
+}
+
+.vets-content.pet-care {
+    h2, h3, li:before {
+        color: $vets-pink;
     }
 }
 

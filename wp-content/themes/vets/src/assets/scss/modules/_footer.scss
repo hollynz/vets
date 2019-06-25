@@ -46,13 +46,14 @@
       }
       .parking-details {
         background: $vets-black;
-        width: 100%;
+        width: 80%;
         color: $white;
         font-size: 1em;
         text-align: left;
         padding: 2%;
         @include mq('desktop') {
           padding: 3%;
+          width: 100%;
         }
         @include mq('tablet-small') {
           text-align: center;

@@ -9,8 +9,14 @@
         padding-left: 0;
         margin: 0;
         margin: 0;
+        @include mq('phone-wide') {
+            font-size: 0.9em;
+        }
         li {
             padding-bottom: 5px;
+            @include mq('phone-wide') {
+                margin-bottom: 7px;
+            }
         }
         a {
             color: $vets-grey;
@@ -23,11 +29,6 @@
             font-weight: 700;
             color: $vets-black;
         }
-    }
-    h3 {
-        font-size: 22px;
-        font-family: $vets-lato;
-        color: $vets-orange;
     }
 }
 
