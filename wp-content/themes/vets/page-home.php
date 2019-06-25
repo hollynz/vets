@@ -8,6 +8,7 @@
             attention your pet (and you) need.
         </p>
         <hr class="vets-hr">
+        <p class="vets-paragraph-size-large">Please ring us on <span>03-455-1010</span> for appointments or after-hours emergencies!</p>
         <div class="vets-buttons">
             <a href="http://localhost:3000/vets/services/health-checks">
                 <button class="vets-button inverted">

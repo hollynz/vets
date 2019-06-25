@@ -46,7 +46,7 @@
                 <svg>
                     <rect />
                 </svg>
-                <span>Contact Us</span>
+                <span>Get in Touch</span>
             </button>
         </a>
 

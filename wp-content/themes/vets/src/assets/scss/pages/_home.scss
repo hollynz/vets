@@ -33,38 +33,68 @@
             max-width: 70%;
             font-family: $vets-lato;
             color: $vets-orange;
+            @include mq('desktop') {
+                max-width: 100%;
+                font-size: 3.6em;
+                margin-bottom: 30px;
+            }
             @include mq('navigation') {
                 max-width: 100%;
                 font-size: 3.6em;
-                margin-bottom: 4%;
+                margin-bottom: 20px;
             }
             @include mq('phone-wide') {
                 font-size: 3em;
                 margin-bottom: 4%;
             }
             @include mq('phone') {
-                font-size: 1.8em;
-                margin-bottom: 3%;
+                font-size: 1.6em;
+                margin-bottom: 1%;
+            }
+        }
+        p.vets-paragraph-size-large {
+            margin: 20px 0;
+            span {
+                color: $vets-blue;
+                font-size: 110%;
+                font-weight: 700;
+                @include mq('desktop') {
+                    color: $vets-yellow;
+                }
+            }
+            @include mq('desktop') {
+                color: $white;
+                margin: 10px 0;
+            }
+            @include mq('navigation') {
+                max-width: 100%;
+                font-size: 1em;
+            }
+            @include mq('phone-wide') {
+                font-size: 0.8em;
+                margin: 6% 0;
             }
         }
         .vets-hr {
             max-width: 55%;
             margin: 0;
             border-bottom: 1.2px solid $white;
+            @include mq('desktop') {
+                color: $white;
+                margin: 20px 0;
+            }
             @include mq('navigation') {
                 max-width: 100%;
-                margin-top: 5%;
-                margin-bottom: 7%;
             }
             @include mq('phone-wide') {
-                margin-bottom: 10%;
+                margin: 15px 3%;
             }
         }
         .vets-buttons {
             display: flex;
             justify-content: flex-end;
             max-width: 55%;
-            margin-top: 3%;
+            margin-top: 25px;
             @include mq('navigation') {
                 max-width: 100%;
             }
@@ -74,6 +104,7 @@
             @include mq('phone-wide') {
                 flex-direction: column;
                 align-items: center;
+                margin-top: 10px;
             }
             a {
                 margin-left: 6%;
@@ -90,20 +121,6 @@
             }
             .vets-button.inverted svg rect {
                 stroke: $vets-orange;
-            }
-        }
-        p.vets-paragraph-size-large {
-            @include mq('desktop') {
-                color: $white;
-            }
-            @include mq('navigation') {
-                max-width: 100%;
-                font-size: 1em;
-                margin-bottom: 0;
-            }
-            @include mq('phone-wide') {
-                font-size: 0.9em;
-                margin: 8% 0;
             }
         }
     }
@@ -285,6 +302,9 @@
         display: flex;
         justify-content: center;
         @include mq('tablet') {
+            width: 100%;
+        }
+        @include mq('tablet-small') {
             width: 80%;
         }
         a {
@@ -292,12 +312,21 @@
             .tab {
                 @include mq('tablet') {
                     margin: 1% 0;
+                    height: 200px;
                 }
                 .vets-heading-size-small {
                     color: $white;
                     margin-bottom: 5%;
                     @include mq('tablet') {
-                        font-size: 1.6em;
+                        font-size: 1.4em;
+                    }
+                    @include mq('tablet-small') {
+                        font-size: 1.9em;
+                    }
+                }
+                i {
+                    @include mq('tablet') {
+                        font-size: 2em;
                     }
                 }
             }

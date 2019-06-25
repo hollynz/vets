@@ -16,7 +16,7 @@
     <a class="cell medium-4" href="http://localhost:3000/vets/pet-care/glossary">
         <div class="tab pet-care">
             <i class="fas fa-dog"></i>
-            <h2 class="vets-heading-size-small">Pet Care</h2>
+            <h2 class="vets-heading-size-small">Pet Care Tips</h2>
             <hr class="pet-care-tab-hr">
         </div>
     </a>

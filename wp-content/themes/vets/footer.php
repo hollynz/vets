@@ -13,8 +13,13 @@
 </div>
 <footer>
 	<div class="vets-footer">
+	
 		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.2144408224653!2d170.4848863159401!3d-45.907022279108574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eaeb5c149f7ab%3A0x97518a345926510f!2svets%40st.clair!5e0!3m2!1sen!2snz!4v1560745883342!5m2!1sen!2snz">
 		</iframe>
+		<div class="parking-details">
+			<h3 class="vets-heading-size-small">Parking</h3>
+			<p> We have two signposted parks behind the clinic accessed off Allendale Road.</p>
+		</div>
 		<div class="footer-content">
 			<div class="grid-container">
 					<div class="footer-content-text grid-x">

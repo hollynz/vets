@@ -93,6 +93,9 @@
     .vets-services {
         padding: 0 6%;
         text-align: left;
+        @include mq('phone-wide') {
+            margin-top: 15%;
+        }
         h3 {
             font-family: $vets-poiret;
             font-weight: 700;
@@ -141,6 +144,7 @@
         margin-top: 20%;
     }
     @include mq('phone-wide') {
+        margin-top: 25%;
         margin-bottom: 30%;
     }
     .heading {
@@ -175,7 +179,7 @@
         flex-direction: column;
         width: 100%;
         @include mq('phone-wide') {
-            margin-top: 40px;
+            margin-top: 30px;
         }
         .item:nth-child(odd) {
             margin-right: 30vw;
@@ -206,7 +210,7 @@
             align-items: flex-start;
             @include mq('phone-wide') {
                 flex-direction: column;
-                margin-bottom: 10px;
+                margin-bottom: 14px;
             }
             .number {
                 margin: 0;
@@ -224,6 +228,9 @@
                     font-size: 1.6em;
                     margin-top: 12%;
                     color: $white;
+                    @include mq('phone-wide') {
+                        font-size: 1.2em;
+                    }
                 }
             }
             p {
@@ -242,6 +249,7 @@
     }
     .vets-button-link {
         margin: 50px 0;
+        margin-top: 30px;
         .vets-button {
         background: $vets-red;
         }
