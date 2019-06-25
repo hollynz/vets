@@ -242,6 +242,18 @@
               svg rect {
                 stroke-dasharray: 210, 312;
                 stroke-dashoffset: 210;
+                @include mq('desktop') {
+                  stroke-dasharray: 180, 312;
+                  stroke-dashoffset: 227;
+                }
+                @include mq('tablet') {
+                  stroke-dasharray: 180, 312;
+                  stroke-dashoffset: 250;
+                }
+                @include mq('tablet-small') {
+                  stroke-dasharray: 180, 312;
+                  stroke-dashoffset: 227;
+                }
               }
               p, .fa-facebook-square {
                 color: $vets-orange;
