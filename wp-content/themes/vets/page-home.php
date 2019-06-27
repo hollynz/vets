@@ -10,7 +10,7 @@
         <hr class="vets-hr">
         <p class="vets-paragraph-size-large">Please ring us on <span>03-455-1010</span> for appointments or after-hours emergencies!</p>
         <div class="vets-buttons">
-            <a href="http://localhost:3000/vets/services/health-checks">
+            <a href="<?php echo get_post_permalink(46); ?>">
                 <button class="vets-button inverted">
                     <svg>
                         <rect />
@@ -118,34 +118,6 @@
     
 </div>
 <div class="grid-container vets-services home">
-    <h2 class="vets-heading-size-small"><a href="http://localhost:3000/vets/appointments">How Can We Help?</a></h2>
+    <h2 class="vets-heading-size-small"><a href="<?php echo get_page_link(141); ?>">How Can We Help?</a></h2>
     <?php get_template_part('library/about-tabs'); ?>
-    
-    
-    <!-- <div class="grid-x grid-margin-x">
-        <div>
-            <a href="http://localhost:3000/vets/services/health-checks">
-                    <div class="service our-services cell medium-4">
-                        <h2 class="vets-heading-size-small">Healthcare Services</h2>
-                    </div>
-                </a>
-            </div>
-                <div>
-                <a href="http://localhost:3000/vets/appointments">
-                    <div class="service appointments cell medium-4">
-                        <h2 class="vets-heading-size-small">Appointments</h2>
-                    </div>
-                </a>
-                </div>
-                <div>
-                <a href="http://localhost:3000/vets/pet-care/glossary">
-                    <div class="service pet-care cell medium-4">
-                        <h2 class="vets-heading-size-small">Pet Care Advice</h2>
-                    </div>
-                </a>
-                </div>
-        </div>
-    </div> -->
-
-
 <?php get_footer(); ?>

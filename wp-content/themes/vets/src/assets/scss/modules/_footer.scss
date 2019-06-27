@@ -265,6 +265,7 @@
     }
   }
   .footer-bottom {
+    width: 100%;
     border-top: solid 1px $white;
     background: $vets-black;
     display: flex;
@@ -273,8 +274,10 @@
     align-items: center;
     align-content: center;
     div {
+      width: 300px;
       padding: 4px 0;
       p {
+        width: 100%;
         font-size: 0.9em;
         padding: 5%;
         margin: 0;

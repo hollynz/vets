@@ -41,7 +41,7 @@
                     endif;
                     
                 ?>
-                <a href="http://localhost:3000/vets/contact-us" class="contact-button">
+                <a href="<?php echo get_page_link(32); ?>" class="contact-button">
                     <button class="vets-button">
                         <svg>
                             <rect />

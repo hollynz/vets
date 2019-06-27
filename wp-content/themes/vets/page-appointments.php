@@ -41,7 +41,7 @@
                 
             </div>
         </div>
-        <a class="vets-button-link" href="http://localhost:3000/vets/contact-us">
+        <a class="vets-button-link" href="<?php echo get_page_link(32); ?>">
             <button class="vets-button">
                 <svg>
                     <rect />
