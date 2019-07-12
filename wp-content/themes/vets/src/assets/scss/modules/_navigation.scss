@@ -1,4 +1,9 @@
-// Navigation breakpoints
+#header {
+  @include mq('navigation') {
+    transition: all 0.6s ease-in-out;
+  }
+}
+
 .mobile-menu,
 .site-title-bar {
   @include hide-for(nav);

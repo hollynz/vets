@@ -23,7 +23,7 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
-	<header class="site-header" role="banner">
+	<header id="header" class="site-header" role="banner">
 		<div class="grid-container vets-nav-top">
 			<?php get_template_part('library/contact-menu'); ?>
 			<div class="vets-contact-item">

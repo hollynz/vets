@@ -12,4 +12,5 @@ import './lib/nav-dropdown-active-state';
 import './lib/form-maker-contact-form-buttons';
 import './lib/about-tabs-active-state';
 import './lib/services-menu-dropdown';
+import './lib/nav-scroll-hide-show';
 $(document).foundation();

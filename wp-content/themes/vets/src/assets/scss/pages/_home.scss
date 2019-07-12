@@ -8,7 +8,7 @@
     background-position: 100% 20%;
     position: relative;
     @include mq('desktop') {
-        background-color: #818181;
+        background-color: #b7b7b7;
         background-blend-mode: multiply;
     }
     @include mq('navigation') {

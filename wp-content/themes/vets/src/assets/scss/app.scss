@@ -64,8 +64,10 @@
 @import "global/wp-admin";
 @import "global/wp-overrides";
 @import "global/gutenberg";
+@import "global/no-select";
 
 // Modules
+@import "modules/typography";
 @import "modules/navigation";
 @import "modules/content";
 @import "modules/footer";
@@ -79,15 +81,14 @@
 @import "components/links";
 @import "components/lists";
 @import "components/about-menu";
+@import "components/about-tabs";
+@import "components/testimonials";
 
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
 
-// Vets
-@import "modules/typography";
-@import "components/about-tabs";
-@import "components/testimonials";
+// Vets Pages
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";
